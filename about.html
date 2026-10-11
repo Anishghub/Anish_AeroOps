@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AAO - About</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <style>
+    .h11 {
+      text-shadow:
+        0px 0px 8px rgb(206, 16, 42),
+        0px 0px 8px rgb(0, 204, 255),
+        0px 0px 8px rgba(165, 182, 9, 0.884),
+        0px 0px 8px rgb(255, 251, 0),
+        0px 0px 8px rgb(255, 251, 0);
+
+    }
+
+    .btn-rounded-white {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      background-color: hsla(0, 0%, 100%, 0.747);
+      border: 2px solid #333;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .btn-rounded-white:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .body1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 10vh; */
+      background: #000;
+      overflow: hidden;
+    }
+
+    .container1 {
+      position: absolute;
+      top: 99%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle1 {
+      position: absolute;
+      background: transparent;
+      width: calc(var(--i) * 2.5vmin);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 3px solid rgb(0, 255, 13);
+      transform-style: preserve-3d;
+      transform: rotateX(70deg) translateZ(50px);
+      animation: animate 3s ease-in-out calc(var(--i) * 0.08s) infinite;
+      box-shadow: 0 0 15px rgb(124, 124, 124), inset 0 0 15px rgb(124, 124, 124);
+    }
+
+    @keyframes animate {
+
+      0%,
+      100% {
+        transform: rotateX(70deg) translateZ(50px) translateY(0);
+        filter: hue-rotate(0);
+      }
+
+      50% {
+        transform: rotateX(70deg) translateZ(50px) translateY(-50vmin);
+        filter: hue-rotate(360deg);
+      }
+    }
+  </style>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Anish AeroOps - v1.3.0
+  * Template URL: https://bootstrapmade.com/Anish AeroOps-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/AAO logo.png" alt="">
+        <h1>Anish AeroOps<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About ME</a></li>
+          <li><a href="services.html">Safety & Training</a></li>
+          <li><a href="Automation.html">Automation</a></li>
+          <li><a href="blog-details.html">Multi-Location</a></li>
+
+          <!-- START OF DROPDOWN  -->
+          <li class="dropdown"><a href="QualityCheck.html"><span>Quality Check</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <!-- Dayily -->
+              <li class="dropdown"><a href="#"><span> Daily</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Daily test here</a></li>
+                </ul>
+              </li>
+              <!-- weekly  -->
+              <li class="dropdown"><a href="#"><span> Weekly</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="T_Conductivity.html">Conductivity</a></li>
+                  <li><a href="T_Airvent.html">Airvent</a></li>
+                  <li><a href="T_Pump.html">Pump</a></li>
+                  <li><a href="T_Floating suction .html">Floating Suction</a></li>
+                  <li><a href="T_Stainer_Cleaning.html">Strainer Cleaning</a></li>
+                  <li><a href="T_DP .html">DP Check</a></li>
+                </ul>
+              </li>
+              <!-- Monthly  -->
+              <li class="dropdown"><a href="#"><span> Monthly</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="T_Hose Test.html">Hose test</a></li>
+                  <li><a href="T_Silver Coro .html">Silver Coro Test</a></li>
+                  <li><a href="T_Copper Coro test.html">Copper Coro Test</a></li>
+                </ul>
+              </li>
+
+              <!-- quaterly -->
+              <li class="dropdown"><a href="#"><span>Quarterly</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+
+                  <li><a href="T_Millipore Test  Gravi.html">Mili Gravimetric</a></li>
+                  <li><a href="T_Pressure Gauge.html">Pressure Gauges</a></li>
+
+                </ul>
+              </li>
+              <!-- Yearly -->
+              <li class="dropdown"><a href="#"><span> Yearly</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="T_Tank_Cleaning.html">Tank Cleaning</a></li>
+                  <li><a href="T_Filter_Inspection.html">Filter inspection</a></li>
+                  <li><a href="T_Meter calibration.html">Meter Calibration</a></li>
+                </ul>
+              </li>
+              <!-- 03 Yearly -->
+              <li class="dropdown"><a href="#"><span> Fuelling Drill</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="T_Density.html">Density</a></li>
+                  <li><a href="T_Refuellig drill .html">Refuelling drill</a></li>
+                </ul>
+              </li>
+              <!-- 03 Yearly -->
+              <li class="dropdown"><a href="#"><span> Once in 3yrs</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="T_Tank_Cleaning.html">Tank Cleaning</a></li>
+                </ul>
+              </li>
+              <li><a href="T_Decant 0f tank lorries.html">Decantation of Lorrie</a></li>
+              <li><a href="T_Refueller_Loading.html">loading of Refueller</a></li>
+              <li><a href="#"> demo Dropdown</a></li>
+
+            </ul>
+          </li>
+
+          <!-- END OF DROPDOWN  -->
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.png');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+        <marquee behavior="" direction="">
+          <h2 style="color: rgb(22, 92, 197); display: inline;">About</h2>
+          <h2 style="color: rgba(221, 164, 6, 0.842); display: inline;">
+            Anish AeroOps
+          </h2>
+        </marquee>
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>About</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="/assets/img/team/Anish kumar.png" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Anish Kumar</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Aviation Officers</span></p>
+                        <p><span class="title-s">Email: </span> <span>anishsingh77177@gmail.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>+91 7717761569</span></p>
+                        <p><span class="title-s">Qualificaton: </span> <span> B-Tech</span></p>
+                      </div>
+                      <a href="https://drive.google.com/file/d/1KKA4KH_0mZet_0lx4d3bMTQMPQAasJ2e/view?usp=sharing"
+                        class="btn-rounded-white " download="Anish_Kumar_Resume.pdf" class="btn btn-success">
+                        Download Resume
+                      </a>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+                    <span>🚗 Driving & Field Operations</span> <span class="pull-right">95%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>✈️ Aviation Fuel Operations</span> <span class="pull-right">87%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 87%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>💻 SAP & Automation Operations</span> <span class="pull-right">82%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 82%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>🤝 Team & Coordination Skills</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>⛽ Tank Farm Operations</span> <span class="pull-right">98%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>🧪 Fuel Quality Control</span> <span class="pull-right">89%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>🛡️ Safety & Compliance</span> <span class="pull-right">99%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="body1">
+                      <div class="container1">
+                        <div class="circle1" style="--i:0;"></div>
+                        <div class="circle1" style="--i:1;"></div>
+                        <div class="circle1" style="--i:2;"></div>
+                        <div class="circle1" style="--i:3;"></div>
+                        <div class="circle1" style="--i:4;"></div>
+                        <div class="circle1" style="--i:5;"></div>
+                        <div class="circle1" style="--i:6;"></div>
+                        <div class="circle1" style="--i:7;"></div>
+                        <div class="circle1" style="--i:8;"></div>
+                        <div class="circle1" style="--i:9;"></div>
+                        <div class="circle1" style="--i:10;"></div>
+                        <div class="circle1" style="--i:11;"></div>
+                        <div class="circle1" style="--i:12;"></div>
+                        <div class="circle1" style="--i:13;"></div>
+                        <div class="circle1" style="--i:14;"></div>
+                        <div class="circle1" style="--i:15;"></div>
+                        <div class="circle1" style="--i:16;"></div>
+                        <div class="circle1" style="--i:17;"></div>
+                        <div class="circle1" style="--i:18;"></div>
+                        <div class="circle1" style="--i:19;"></div>
+                        <div class="circle1" style="--i:20;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About Me..
+
+                    </div>
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    Hello! 👋 I’m Anish Kumar, an Assistant Aviation Officer with professional experience in aviation
+                    fuel operations, quality control, operational management, safety compliance, and
+                    technology-enabled processes.
+                  </p>
+                  <p> I have experience working with leading Oil & Gas PSUs including IOCL, HPCL, and AAO, handling
+                    critical aviation fuel operations such as Jet A-1 fuel handling, into-plane refueling, tank farm
+                    operations, fuel quality testing, refueller management, inventory control, and flight fueling
+                    coordination. </p>
+                  <p> My role also involves ensuring DGCA and statutory compliance, maintaining operational and
+                    regulatory documentation, managing SAP records, supporting automated fuel handling systems, and
+                    monitoring critical equipment and processes to maintain safe, reliable, and efficient operations.
+                  </p>
+                  <p> I am a responsible, safety-focused, and adaptable professional with strong skills in team
+                    coordination, communication, problem-solving, decision-making, time management, and multitasking.
+                    I also have technical knowledge in Java, Python, JavaScript, SQL, React.js, Power BI, Advanced
+                    Excel, SAP, and IT support, which helps me contribute to process improvement and technology-driven
+                    operational efficiency. </p>
+                  <p> I am passionate about maintaining high operational standards, continuously improving processes,
+                    and contributing to organizations where safety, quality, efficiency, and teamwork are valued. </p>
+                  <p> </p>
+                  <p> </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg" style="background-image: url(/assets/img/alt-services.jpg);" data-aos="zoom-in"
+            data-aos-delay="200"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>✈️ Aviation Fuel Operations & Quality Assurance</h3>
+            <p>Managing safe, reliable, and efficient Jet A-1 / ATF aircraft refuelling operations while ensuring strict
+              compliance with aviation safety, fuel quality, regulatory, and operational procedures.</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-check-square flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">🛫 Aircraft Refuelling Operations</a></h4>
+                <p>Executing domestic and international aircraft refuelling operations with proper vehicle positioning,
+                  bonding/grounding, nozzle connection, communication, safety precautions, and adherence to approved
+                  operating procedures.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">🧪 Fuel Quality Control & QCS</a></h4>
+                <p>Performing Quality Control & Sampling (QCS) activities including fuel sampling, water detection,
+                  visual inspection, contamination checks, filter/strainer monitoring, and maintaining fuel quality in
+                  accordance with applicable aviation fuel standards and procedures.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-check-circle flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">🔍 Pre-Operational Safety Checks</a></h4>
+                <p>Conducting comprehensive checks of refuellers, hydrant dispensers, hoses, nozzles, bonding cables,
+                  emergency shutdown systems, fire extinguishers, safety equipment, and operational tools before and
+                  during fuelling operations.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-check-square flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">💻 Digital Systems & IT Support</a></h4>
+                <p>Supporting SAP, digital operational systems, Excel-based reporting, data analysis, hardware/software
+                  troubleshooting, LAN/network support, and automation initiatives to improve operational efficiency and
+                  data-driven decision-making.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+      </div>
+    </section><!-- End Alt Services Section -->
+    <!-- ======= Our Team Section ======= -->
+    <!-- delete  -->
+
+    <!-- dele -->
+
+
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img" style="background-image: url(assets/img/frot.png);"></div>
+
+          <div class="col-lg-7">
+            <h2>From Aviation Operations to Digital Transformation</h2>
+            <div class="our-story">
+              <h4>🎯 My Vision</h4>
+              <h3>🚀 My Professional Journey</h3>
+              <p>My professional journey combines aviation fuel operations, quality control, safety management, and
+                information technology. I have developed hands-on experience in airport operations while continuously
+                building my expertise in digital systems, software development, data analytics, and network support.</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>✈️ Aviation Fuel Operations</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>🧪 Quality & Safety</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>💻 Technology & Digital Skills</span></li>
+              </ul>
+              <p>To build a career at the intersection of Aviation + Technology, using operational experience and
+                digital expertise to create safer, smarter, more efficient, and data-driven aviation operations.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter section-bg">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-projector color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
+                  class="purecounter">KL</span>
+                <p>Year of exp </p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-bus-front color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Technical Skills</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-alarm color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="365" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>24 * 7 </p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="89" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>% in B-Tech </p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+
+
+    <!-- ======= Alt Services Section 2 ======= -->
+    <section id="alt-services-2" class="alt-services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3> mission
+            </h3>
+            <p>Through our expertise, reliability, and commitment, deliver safe, compliant, and high-quality aviation
+              fuelling and engineering services. support our people, clients, and the wider aviation industry by
+              upholding the highest standards of safety, professionalism, and operational excellence.</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-easel flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Aviation Refuelling Excellence</a></h4>
+                <p>Providing safe, efficient, and reliable aircraft refuelling services with a focus on precision,
+                  quality, and operational efficiency.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Safety First Approach</a></h4>
+                <p>Championing the highest aviation safety standards through strict compliance, trained personnel, and
+                  advanced operational procedures.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Innovation & Sustainability</a></h4>
+                <p>Encouraging modern fueling practices, sustainable operations, and continuous improvement to support
+                  the future of aviation services.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">🏢 Infrastructure Optimization & Cost Efficiency</a></h4>
+                <p>To further enhance operational efficiency and optimize resource utilization, the facility will be
+                  relocated from the terminal building area to an external operational location. This strategic shift is
+                  expected to reduce monthly rental expenses and generate long-term cost savings.</p>
+              </div>
+            </div><!-- End Icon Box -->
+          </div>
+
+          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/one\ man.jpeg);" data-aos="zoom-in"
+            data-aos-delay="100"></div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section 2 -->
+
+    <!-- ======= Our Team Section ======= -->
+    <!-- End Our Team Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>✈️ i Have deal with</h2>
+
+        </div>
+
+        <div class="slides-2 swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/Logo/IAS.jpg" class="testimonial-img" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/Logo/alliance air.png" class="testimonial-img" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/Logo/red bird.png" class="testimonial-img" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/Logo/vsr.png" class="testimonial-img" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/Logo/wfs.png" class="testimonial-img" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/Logo/Zset logo.jpg" class="testimonial-img" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/Logo/cargoaircharteringfze_logo.jpg" class="testimonial-img" alt="">
+            </div>
+
+
+            <!-- End testimonial item -->
+
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Anish AeroOps</h3>
+              <p>
+                Anish AeroOps,<br>
+                Shaheed Bhagat Singh International Airport Chandigarh,
+                SAS Nagar Mohali,
+                Punjab-140306 <br><br>
+                <strong>Phone:</strong> +91 7717761569<br>
+                <strong>Tel:</strong> 0172 2242010<br>
+                <strong>Email:</strong> anishsingh77177@gmail.com<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About ME</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>I expert in </h4>
+            <ul>
+              <li><a href="#">Refueling </a></li>
+              <li><a href="#">Releaving duty</a></li>
+              <li><a href="#">Maintenance</a></li>
+              <li><a href="#">Testing</a></li>
+              <li><a href="#">HSSE</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Aim</h4>
+            <ul>
+              <li><a href="#">Aviation</a></li>
+              <li><a href="#">Fuels & Services</a></li>
+              <li><a href="#">Refinery</a></li>
+              <li><a href="#">Gas</a></li>
+              <li><a href="#">Proficiency Testing</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Anish AeroOps</h4>
+            <ul>
+              <li><a href="#">Motorists/Fleet owners</a></li>
+              <li><a href="#">Households</a></li>
+              <li><a href="#">Aviation</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Startups</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Anish AeroOps</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Anish AeroOps-bootstrap-construction-website-template/ -->
+          Designed by <a href="https://anish-portfolio-phi.vercel.app/">Anish kumar</a> Distributed by <a
+            href="https://www.bharatpetroleum.in/careers/learning-the-alternate-way">AAO tutorial</a>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
